@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SRq-Wu-Jo2">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER ACCOUNT" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PyQ-rC-9FV">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cM2-UY-Fa5">
+                                <state key="normal" title="Login"/>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1kk-Qr-jP1">
+                                <color key="color" red="0.28235294119999998" green="0.8862745098" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cM2-UY-Fa5" firstAttribute="top" secondItem="1kk-Qr-jP1" secondAttribute="bottom" constant="15" id="A22-cX-Jok"/>
+                            <constraint firstItem="SRq-Wu-Jo2" firstAttribute="leading" secondItem="PyQ-rC-9FV" secondAttribute="leading" id="Gwh-7J-YYn"/>
+                            <constraint firstItem="1kk-Qr-jP1" firstAttribute="centerX" secondItem="cM2-UY-Fa5" secondAttribute="centerX" id="K49-Vp-BEJ"/>
+                            <constraint firstItem="cM2-UY-Fa5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KbJ-Am-IFZ"/>
+                            <constraint firstItem="PyQ-rC-9FV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="Rw4-wn-Xpp"/>
+                            <constraint firstItem="cM2-UY-Fa5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SzQ-nK-Yaa"/>
+                            <constraint firstItem="PyQ-rC-9FV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="111" id="eRo-hR-APc"/>
+                            <constraint firstItem="SRq-Wu-Jo2" firstAttribute="centerX" secondItem="PyQ-rC-9FV" secondAttribute="centerX" id="miK-t3-mB9"/>
+                            <constraint firstItem="SRq-Wu-Jo2" firstAttribute="top" secondItem="PyQ-rC-9FV" secondAttribute="bottom" constant="53" id="uuj-Ih-Ya3"/>
+                            <constraint firstItem="PyQ-rC-9FV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vVr-Mg-RLc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="UserPwdTF" destination="SRq-Wu-Jo2" id="dPR-js-45b"/>
+                        <outlet property="juhuaView" destination="1kk-Qr-jP1" id="vzr-IJ-p7n"/>
+                        <outlet property="loginBtn" destination="cM2-UY-Fa5" id="2Ma-m8-66u"/>
+                        <outlet property="userPhoneTF" destination="PyQ-rC-9FV" id="7Nh-aM-y6K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
